@@ -7,6 +7,11 @@ public class BidUpdate implements Serializable {
     private double bidAmount;
     private String bidder;
 
+    public BidUpdate() {}
+
+    public BidUpdate(String itemId, double amount, String user) {
+    }
+
     public String getItemId() {
         return itemId;
     }

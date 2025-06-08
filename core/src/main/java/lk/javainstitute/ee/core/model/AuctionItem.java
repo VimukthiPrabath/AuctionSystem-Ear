@@ -1,9 +1,13 @@
 package lk.javainstitute.ee.core.model;
 
-public class AuctionItem {
+import java.io.Serializable;
+
+public class AuctionItem implements Serializable {
     private String id;
     private String name;
     private double currentBid;
+
+    public AuctionItem() {}
 
     public AuctionItem(String number, String laptop, double v) {
     }

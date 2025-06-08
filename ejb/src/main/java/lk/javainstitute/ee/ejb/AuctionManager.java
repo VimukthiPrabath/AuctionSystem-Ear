@@ -1,6 +1,7 @@
-package ejb;
+package lk.javainstitute.ee.ejb;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.ejb.LocalBean;
 import jakarta.ejb.Singleton;
 import jakarta.ejb.Startup;
 import jakarta.ejb.Stateless;
@@ -13,6 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Singleton
 @Startup
+@LocalBean
 public class AuctionManager {
     private Map<String, AuctionItem> auctionItems = new ConcurrentHashMap<>();
 

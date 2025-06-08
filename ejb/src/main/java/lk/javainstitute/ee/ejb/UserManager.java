@@ -1,6 +1,7 @@
-package ejb;
+package lk.javainstitute.ee.ejb;
 
 
+import jakarta.ejb.LocalBean;
 import jakarta.ejb.Singleton;
 import lk.javainstitute.ee.core.model.User;
 
@@ -8,6 +9,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Singleton
+@LocalBean
 public class UserManager {
     private Map<String, User> users = new ConcurrentHashMap<>();
     public boolean register(String username, String password) {

@@ -18,4 +18,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>10.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>lk.javainstitute.ee</groupId>
+            <artifactId>ejb</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
 </project>
